@@ -48,7 +48,7 @@ app.post("/convert-mp3", async (req, res) => {
             //     song_link : fetchResponse.link
             // });
     
-                if(fetchResponse.status === "ok")
+                if(fetchResponse.msg === "success")
                     return res.render("index", {
                         success : true,
                         song_title : fetchResponse.title,
